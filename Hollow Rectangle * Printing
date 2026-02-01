@@ -1,0 +1,22 @@
+// Ninja has been given two integers 'M' and ‘N’.
+// Now Ninja has to draw a rectangle of height ‘M’ and breadth ‘N’ using the character * such that the * only occurs at the boundaries of the rectangle, and inside of this boundary, there is space only.
+// Now, Ninja doesn’t know how to perform this operation.
+// You being Ninja's best friend, your task is to help Ninja to solve this problem.
+
+#include <bits/stdc++.h> 
+using namespace std;
+void printPattern(int m, int n) 
+{   cin >> m;
+    cin >> n;
+    for(int i=0; i<m; i++)
+        {for(int j=0; j<n; j++)
+            {if((i==0 || i==m-1) || (j==0 || j==n-1))
+                {cout << "*";
+                }
+             else
+             {cout << " ";
+             }
+            }
+         cout << "\n";
+        }    
+}
