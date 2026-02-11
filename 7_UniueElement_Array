@@ -1,0 +1,30 @@
+// WAC++P to print all the unique values in an array.
+#include<iostream>
+using namespace std;
+int main()
+{   int n;
+    cout << "Enter limit of array : ";
+    cin >> n;
+    int a[n];
+    for(int i=0; i<n; i++)
+        {cout << "Enter Element for position " << i <<  "th : ";
+         cin >> a[i];
+        }
+    cout << "Given Array is : ";
+    for(int i=0; i<n; i++)
+        {cout << a[i] << " ";
+        }
+    cout << endl << "Unique Elements are : " ;
+    for(int i=0; i<n; i++)
+        {int count=0;
+         for(int j=0; j<n; j++)
+            {if(a[i]==a[j])
+                {count++;
+                }
+            }
+         if(count==1)
+            {cout << a[i] << " ";
+            }
+        }
+    return 0;
+}
