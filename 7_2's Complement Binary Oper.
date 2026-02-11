@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{   int n, b=0 ;
+    cout << "Enter a -ve Decimal Number : ";
+    cin >> n;
+    int e = (-1) * n;
+    int c = e;
+    int d = (e << 1) ;
+    while(b<=c)    
+        {d = (d | 1) ;   
+        b++;
+        }
+    // for(int i=0; i<=c; i++)
+    //     {d = (d | 1);
+    //     }
+    cout << " Decimal Equivalent of " << n << " is " << d ;
+    return 0;
+}
